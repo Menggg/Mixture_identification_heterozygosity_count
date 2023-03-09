@@ -11,4 +11,13 @@ Quick start command line:
 
 Input data:
 
-
+Genotype data file and index file are requied.
+Genotype data file format is .traw format of PLINK (https://www.cog-genomics.org/plink/2.0/formats#traw) including m SNPs and n samples.
+Index file is a text file each row include NOC (number of contributors) number that randomly sampled from 1 to n (sample size).
+Additionally, some parameters need to be specifyed as follow,
+--snp is the number of SNPs in genotype file
+--sample is the number of samples in genptype file, also need to be consistant with index file
+--sim_round is the number of simulated mixture samples, must be less or equivalent to the number of rows in index file
+--noc_number is the number of contributor in mixture, must be less or equivalent to the number of columns in index file
+--type is the type of simulation, 1 refers to non-contributor exclusion simulation, 2 referes to number of contributor identification simulation
+--out give the prefix of output file name.
