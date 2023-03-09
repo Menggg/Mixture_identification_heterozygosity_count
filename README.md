@@ -10,8 +10,8 @@ Quick start command line: <br />
 
 Input data: <br />
 Genotype data file and index file are requied.
-Genotype data file format is .traw format of PLINK (https://www.cog-genomics.org/plink/2.0/formats#traw) including m SNPs and n samples.
-Index file is a text file each row include NOC (number of contributors) number that randomly sampled from 1 to n (sample size).
+Genotype data file format is .traw format of PLINK (https://www.cog-genomics.org/plink/2.0/formats#traw) including m SNPs and n samples. <br />
+Index file is a text file each row include NOC (number of contributors) number that randomly sampled from 1 to n (sample size). <br />
 Additionally, some parameters need to be specifyed as follow, <br />
 --snp is the number of SNPs in genotype file <br />
 --sample is the number of samples in genptype file, also need to be consistant with index file <br />
