@@ -5,14 +5,18 @@ The pre-compiled execurate file for Linux and source code are availabe. User cou
 
 
 Quick start command line: <br />
-./myMix --data demo_genotype.traw --sim_index demo_index_noc_2.sim --out test --snp 18 --sample 2504 --sim_round 50 --noc_number 2  --type 2
+./myMix --data demo_genotype --sim_index demo_index_noc_2 --out test --snp 18 --sample 2504 --sim_round 50 --noc_number 2  --type 2
 
 
 Input data: <br />
 Genotype data file and index file are requied.
 Genotype data file format is .traw format of PLINK (https://www.cog-genomics.org/plink/2.0/formats#traw) including m SNPs and n samples. <br />
 Index file is a text file each row include NOC (number of contributors) number that randomly sampled from 1 to n (sample size). <br />
+
+Parameters: <br />
 Additionally, some parameters need to be specifyed as follow, <br />
+--data is the prefix of genotype data file, which must use .traw as postfix <br />
+--sim_index is the prefix of index file, which must use .sim as postfix <br />
 --snp is the number of SNPs in genotype file <br />
 --sample is the number of samples in genptype file, also need to be consistant with index file <br />
 --sim_round is the number of simulated mixture samples, must be less or equivalent to the number of rows in index file <br />
